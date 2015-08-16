@@ -1,0 +1,358 @@
+/******************************************************************************/
+/* colors for photograph */
+/******************************************************************************/
+body {
+  background:#000;
+}
+#Header {
+  background:	#000 ;
+}
+#outerwrapper {
+  background:transparent;
+}
+#middleline {
+  background:#000;
+}
+#middleline_c {
+  background:#000;
+	filter:alpha(opacity=40);
+	-moz-opacity: 0.4;
+	opacity:0.4;
+	behavior: url("/PIE.htc");
+}
+#middleline .mc_innerblock {
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity:0.6;
+	behavior: url("/PIE.htc");
+}
+
+#middleline #Sitename {
+	color:#fff;
+	text-shadow: -1px -1px #fff, 1px 1px #333;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity:0.6;
+	behavior: url("/PIE.htc");
+}
+#middleline #Slogan {
+	color:#fff;
+	text-shadow: -1px -1px #fff, 1px 1px #333;
+	filter:alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity:0.5;
+	behavior: url("/PIE.htc");
+}
+
+#Header #breadcrumbs {
+	color:#fff;
+	background:transparent  url(images/tama_05b.gif) no-repeat 5px 8px;
+}
+#Header #breadcrumbs a:link ,#Header #breadcrumbs a:visited{
+	color:#fff;
+}
+
+#Container {
+  background:#000;
+}
+#Wrapper {
+	background:transparent;
+}
+#CenterWrapper {
+	background:transparent;
+	border-left:200px solid #000;
+}
+#SideColumn {
+	background:transparent;
+}
+
+#CenterWrapper div.L0R0 ,#CenterWrapper div.L1R0 {
+	background:#fff;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;	
+	-webkit-box-shadow: inset 0px 0px 10px 0px #000; /* Safari, Chromeóp */
+	-moz-box-shadow: inset 0px 0px 10px 0px #000; /* Firefoxóp */
+	box-shadow: inset 0px 0px 10px 0px #000; /* CSS3 */
+}
+#CenterWrapper div.L1R1 ,#CenterWrapper div.L0R1  {
+	background:#fff;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;	
+	-webkit-box-shadow: inset 0px 0px 10px 0px #000; /* Safari, Chromeóp */
+	-moz-box-shadow: inset 0px 0px 10px 0px #000; /* Firefoxóp */
+	box-shadow: inset 0px 0px 10px 0px #000; /* CSS3 */
+}
+
+#BacktoTop {
+	background:#fff;
+}
+
+/* Menu colors */
+#menu_m a:link,
+#menu_m a:visited {	
+	color:#47266e;
+	font-xise:16px;
+	font-weight:bold;
+}
+#menu_m a:hover {	
+	color:#47266e;
+}
+
+/* Menu colors */
+#menu_m ul li a {
+	display: block;
+	margin-left: -110px;
+	width: 260px;
+	text-align: right;
+	-webkit-border-top-right-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-moz-border-radius-topright: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-moz-box-shadow: 2px 2px 10px #696969;	/* Safari,Google Chromeóp */
+	-webkit-box-shadow: 2px 2px 10px #696969 ;	/* Firefoxóp */
+	box-shadow: 2px 2px 10px #696969;	/* CSS3 */
+	behavior: url("/PIE.htc");
+}
+#menu_m ul li a:hover {
+	margin-left:0px;
+	z-index:105;
+}
+#menu_m ul li a.menu_c1:link ,#menu_m ul li a.menu_c1:visited {
+	background:#ff7f7f!important;
+}
+#menu_m ul li a.menu_c2:link ,#menu_m ul li a.menu_c2:visited {
+	background:	#ff7fff!important;
+}
+#menu_m ul li a.menu_c3:link ,#menu_m ul li a.menu_c3:visited  {
+	background:#7f7fff!important;
+}
+#menu_m ul li a.menu_c4:link ,#menu_m ul li a.menu_c4:visited {
+	background:#7fbfff!important;
+}
+#menu_m ul li a.menu_c5:link ,#menu_m ul li a.menu_c5:visited  {
+	background:#7fffbf!important;
+}
+#menu_m ul li a.menu_c6:link ,#menu_m ul li a.menu_c6:visited  {
+	background:#7fff7f!important;
+}
+#menu_m ul li a.menu_c7:link ,#menu_m ul li a.menu_c7:visited  {
+	background:#ffff00!important;
+}
+#menu_m ul li a.act:link ,#menu_m ul li a.act:visited  {
+	background:orange!important;
+	color:#000;
+		margin-left: -70px;
+}
+#menu_m ul li a.act:hover {
+		margin-left: -70px;
+}
+
+div.module_title , div.module_title a:link ,div.module_title a:visited {
+	font-family: "ÇlÇr Çoñæí©","ÇlÇr ñæí©","ÉÅÉCÉäÉI",serif,"ÉqÉâÉMÉmñæí© Pro W3","ïΩê¨ñæí©","Osaka";
+	font-size:33px;
+	font-weight:bold;
+	color:#808080;
+	text-decoration:none;
+	margin-top:-10px;
+	margin-bottom:15px;
+	margin-left:5px;
+	text-shadow:0 0 1px #bbb, 0 0 1px #bbb, 0 0 1px #bbb, 0 0 1px #bbb;
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+	behavior: url("/PIE.htc");
+}
+div.module_title h1 {
+	font-size:33px;
+	text-indent: -33px;
+	padding-left:33px;
+}
+div.module_title h2 {
+	font-size:33px;
+}
+div.module_title:first-letter , div.module_title h1:first-letter{
+	color:#fff;
+  font-size:48px;
+	padding:5px;
+	padding-left:3px;
+	letter-spacing: -2px;
+	text-shadow:0 0 1px #fafafa, 0 0 1px #fafafa, 0 0 1px #fafafa, 0 0 1px #fafafa;
+	background:orange;
+}
+
+
+/* Content */
+#CenterColumn {
+  background:transparent;
+}
+body.L0R0 #CenterColumn {
+}
+
+#CenterColumn  h2.BlockTitle {
+	padding-left:1.6em;
+	color: #000;
+	background: url(images/cl_007.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+#CenterColumn .BlockContent, #ModuleContents {
+	background:transparent ;
+}
+
+/* Center LR Column */
+#CenterLColumn , #CenterRColumn{
+	background:transparent ;
+}
+
+
+/* Left Right Column */
+#LeftColumn {
+	background:transparent ;
+}
+#RightColumn {
+	background:transparent ;
+}
+
+/* Left Right Column Title */
+#LeftColumn h2.BlockTitle_a {
+	padding-left:1.6em;
+	color: #fffacd;
+	background: url(images/tama_01b.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+#LeftColumn h2.BlockTitle_b {
+	padding-left:1.6em;
+	color: #ffc0cb;
+	background: url(images/tama_04b.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+#LeftColumn h2.BlockTitle_c {
+	padding-left:1.6em;
+	color: #e0ffff;
+	background: url(images/tama_05b.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+
+#RightColumn h2.BlockTitle_a {
+	padding-left:1.6em;
+	color: #000;
+	background: url(images/tama_04.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+#RightColumn h2.BlockTitle_b {
+	padding-left:1.6em;
+	color: #000;
+	background: url(images/tama_04.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+#RightColumn h2.BlockTitle_c {
+	padding-left:1.6em;
+	color: #000;
+	background: url(images/tama_04.gif) left center no-repeat;
+	border-bottom: #ccc 1px dashed;
+}
+
+/* Left Right Column Content */
+#LeftColumn .BlockContent_a ,
+#LeftColumn .BlockContent_b ,
+#LeftColumn .BlockContent_c {
+	color: #f5f5f5;
+	background:transparent ;
+}
+#LeftColumn .BlockContent_a a:link,#LeftColumn .BlockContent_a a:visited ,
+#LeftColumn .BlockContent_b a:link,#LeftColumn .BlockContent_b a:visited,
+#LeftColumn .BlockContent_c a:link,#LeftColumn .BlockContent_c a:visited {
+	color: orange;
+	background:transparent ;
+}
+
+#RightColumn .BlockContent_a {
+	color: #000;
+	background:transparent ;
+}
+#RightColumn .BlockContent_b {
+	color: #000;
+	background:transparent ;
+}
+#RightColumn .BlockContent_c {
+	color: #000;
+	background:transparent ;
+}
+
+/* Footer */
+#Footer {
+	color:#fff;
+	background:#000;
+}
+#Footer a {
+	color:#fff;
+}
+
+
+/* XOOPS Main Menu */
+#mainmenu, #usermenu {
+}
+#mainmenu li, #usermenu li {
+}
+#mainmenu a {
+}
+#mainmenu a:hover {
+	color:#006e54 ;
+	border-right:5px solid #00a381 ;
+}
+#mainmenu a.menuTop {
+	padding-left:2em;
+	background: url(images/wa-ore.png) left center no-repeat;
+}
+#mainmenu a.menuMain {
+	padding-left:2em;
+	background: url(images/wa-midori.png) left center no-repeat;
+}
+#mainmenu a.menuSub {
+	margin-left:1em;
+	padding-left:1.4em;
+	background: url(images/wa-mizu.png) left center no-repeat;
+}
+
+/* XOOPS User Menu */
+#usermenu a {
+}
+#usermenu a:hover {
+	color:#006e54 ;
+	border-right:5px solid #00a381 ;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+}
+
+#usermenu li.userMenuTop a {
+	padding-left:2em;
+	background: url(images/a03.gif) no-repeat;
+}
+#usermenu li.userMenuEdit a {
+	padding-left:2em;
+	background: url(images/a04.gif) no-repeat;
+}
+#usermenu li.userMenuComments a {
+	padding-left:2em;
+	background: url(images/mobilephone.gif) no-repeat;
+}
+#usermenu li.userMenuLogout a {
+	padding-left:2em;
+	background: url(images/xx001.gif) no-repeat;
+}
+#usermenu li.userMenuEmail a {
+	padding-left:2em;
+	background: url(images/mailto.gif) no-repeat;
+}
+#usermenu li.userMenuAdmin a {
+	padding-left:2em;
+	background: url(images/pc.gif) no-repeat;
+}
+
+

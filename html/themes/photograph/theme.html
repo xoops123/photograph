@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="<{$xoops_charset}>"?><{strip}>
+<{include_php file="`$smarty.const.XOOPS_THEME_PATH`/`$xoops_theme`/xugj_assign_theme_language_inc.php"}>
+<{include_php file="`$smarty.const.XOOPS_THEME_PATH`/`$xoops_theme`/xugj_assign_photograph.php"}>
+<{include_php file="`$smarty.const.XOOPS_THEME_PATH`/`$xoops_theme`/xugj_already_js.php"}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<{/strip}>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<title><{$xoops_sitename}> - <{if $xoops_pagetitle}><{$xoops_pagetitle}><{else}><{$xoops_slogan}><{/if}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta name="robots" content="<{$xoops_meta_robots|upper}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author|replace:"@":"&#x40;"}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS Cube" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rev="made" href="mailto:<{$xoops_meta_author|replace:"@":"&#x40;"}>" />
+<link rel="start" title="<{$xoops_sitename}>" href="<{$xoops_url}>/" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<script type="text/javascript"><{$xoops_js|regex_replace:"/(\/\/\-\->|<!\-\-)/":""}></script>
+<{if ! $xcl22_jquery_is_already and ! $xugj_jquery_is_already}>
+<script type="text/javascript" src="<{$xoops_imageurl}>js/jquery.js"></script>
+<{/if}>
+<{if $xoops_module_header}><{$xoops_module_header}><{/if}><{if $xoops_block_header}><{$xoops_block_header}><{/if}>
+<{include file="$xoops_theme/theme_redirect_js.html"}>
+<{include file="$xoops_theme/theme_ext_js.html"}>
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>modules.css" charset="utf-8" />
+<!--[if IE ]>
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>IE8.css" charset="utf-8" />
+<![endif]-->
+</head>
+<body class="L<{$xoops_showlblock}>R<{$xoops_showrblock}> <{if $smarty.server.SCRIPT_FILENAME|basename == "index.php" and $smarty.server.SCRIPT_FILENAME|dirname|basename == $smarty.const.XOOPS_ROOT_PATH|basename}>home<{else}><{if !$xoops_dirname == ""}><{$xoops_dirname}><{else}>other<{/if}><{/if}>">
+
+<div id="outerwrapper"><{* OuterWrapper *}>
+
+<div id="Container" class="clearfix"><{* Container *}>
+
+	<div id="Header"><{* Header *}>
+		<div id="breadcrumbs"><{* breadcrumbs *}><{include file="$xoops_theme/theme_breadcrumbs.html"}></div>
+		<{* search *}><{include file="$xoops_theme/theme_search.html"}>
+		<noscript><{include file="$xoops_theme/theme_noscript.html"}></noscript>
+	</div>
+
+<div id="middleline"><{* middleline *}>
+	<div id="middleline_c"></div>
+	<{include file="$xoops_theme/theme_mc_contents.html"}>
+	<div id="Sitename">
+		<{if $xoops_dirname == ""}>
+			<h1><{$xoops_sitename}></h1>
+		<{else}>
+			<{$xoops_sitename}>
+		<{/if}>
+	</div>
+	<div id="Slogan"><{include file="$xoops_theme/theme_slogan.html"}></div>
+	<div id="Logo"><{* Logo link *}>
+		<a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/blank.gif" alt="<{$xoops_sitename}>"/></a>
+	</div>
+</div>
+
+<div id="Wrapper"><{* Wrapper *}>
+	<div id="CenterWrapper"><{* CenterWrapper *}>
+		<div class="L<{$xoops_showlblock}>R<{$xoops_showrblock}>">
+			<{if !$xoops_dirname == ""}>
+				<{* module title *}><{include file="$xoops_theme/theme_moduletitle.html"}>
+				<{* Submenu *}><{include file="$xoops_theme/theme_submenu.html"}>
+			<{/if}>
+			<{* TopColumn BlockWeight=0 *}><{include file="$xoops_theme/theme_topcolumn.html"}>
+			<{* CenterColumn BlockWeight>0 *}><{include file="$xoops_theme/theme_centercolumn.html"}>
+			<{if $xoops_showlblock == 0 and $xoops_showrblock == 1}>
+				<{* RightColumn *}><{include file="$xoops_theme/theme_rightcolumn.html"}>
+			<{elseif $xoops_showlblock == 1 and $xoops_showrblock == 1}>
+				<{* RightColumn *}><{include file="$xoops_theme/theme_rightcolumn.html"}>
+			<{/if}>
+			<{* Back to Top *}><div id="BacktoTop"><a href="#Header" title="Back to Top">Back to Top</a></div>
+		</div>
+	</div>
+	<div id="SideColumn"><{* SideColumn *}>
+		<{* menu *}><{include file="$xoops_theme/theme_menu.html"}>
+		<{* LeftColumn *}><{include file="$xoops_theme/theme_leftcolumn.html"}>
+	</div>
+</div><{* End Wrapper *}>
+
+</div> <{* End Container *}>
+
+
+<{* Footer *}>
+<div id="Footer"><{include file="$xoops_theme/theme_footer.html"}></div>
+
+</div><{* End outerwrapper *}>
+
+<{* Banner  *}><div id="XoopsBanner"><{$xoops_banner}></div>
+<{* socialbutton *}><{include file="$xoops_theme/theme_socialbutton.html"}>
+
+</body>
+</html>

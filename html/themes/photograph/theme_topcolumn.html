@@ -1,0 +1,14 @@
+<{if $xoops_showcblock == 1}>
+	<{if $xoops_ccblocks}><{* Start Center Center Column BlockWeight = 0 *}>
+	   	<{foreach item=block from=$xoops_ccblocks name=ccloop}>
+		<{if $block.weight == 0 }>
+		<div id="TopColumn">
+			<div class="Topblock" id="centerc<{$smarty.foreach.ccloop.iteration}>">
+				<{if ! $block.title|strstr:"none"}><h2 class="BlockTitle"><{$block.title}></h2><{/if}>
+				<div><{$block.content}></div>
+			</div>
+		</div>
+		<{/if}>
+		<{/foreach}>
+	<{/if}><{* End Center Center Column *}>
+<{/if}>

@@ -1,0 +1,40 @@
+<{* xugj_block により webphoto の人気画像を引用 *}>
+<{* xugj_block オプション指定
+0.dirname	← webphoto
+1.表示数	← 例 5
+2.カテゴリ限定	←ここでカテゴリ番号を指定する　例 0 （カテゴリ指定しない）
+3.サブカテゴリも対象カテゴリ限定のとき有効 ←はい 1  いいえ 0
+4.写真・動画・メディアのタイトルの最大表示文字数	←例 20
+5.写真・動画・メディアの列数	←例 1
+6.キャッシュ時間	←例 キャシュ無し 0
+ *}>
+
+<div class="mc_innerblock">
+
+<{xugj_block file="modules/webphoto/blocks/blocks.php" func="b_webphoto_tophits_p_show" opt="webphoto,30,2,1,0,5,0,1,0,0,0,300" item="block"}>
+
+<{* template from webphoto_block_tophits_p.html *}>
+
+<div class="image_carousel">
+<ul id="foo1">
+<{foreach item=photo key=count from=$block.photo name=photo_list}>
+<{* 掲載ページへリンクさせる *}>
+<li>
+      <{if $block.cfg_use_pathinfo }>
+        <a href="<{$xoops_url}>/modules/<{$block.dirname}>/index.php/photo/<{$photo.photo_id}>/">
+      <{else}>
+        <a href="<{$xoops_url}>/modules/<{$block.dirname}>/index.php?fct=photo&amp;p=<{$photo.photo_id}>">
+      <{/if}>
+
+      <{if $photo.img_thumb_src_s && $photo.img_thumb_width && $photo.img_thumb_height }>
+        <img src="<{$photo.img_thumb_src_s}>" alt="<{$photo.title_s}>" title="<{$photo.title_s}>" width="<{$photo.img_thumb_width}>" height="<{$photo.img_thumb_height}>" class="mc_img_<{cycle values="1,2,3,4,5,6,7"}>" />
+      <{elseif $photo.img_thumb_src_s }>
+        <img src="<{$photo.img_thumb_src_s}>" alt="<{$photo.title_s}>" title="<{$photo.title_s}>" width="<{$block.cfg_thumb_width}>" class="mc_img_<{cycle values="1,2,3,4,5,6,7"}>" />
+      <{/if}>
+      </a>
+</li>
+<{/foreach}>
+</ul>
+</div>
+
+</div>

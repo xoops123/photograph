@@ -1,0 +1,7 @@
+<div id="search">
+  <form id="searchform" name="searchform" action="<{$xoops_url}>/search.php" method="get" class="searchform">
+  <input id="keywords" type="text" name="query" value="<{$smarty.const._gallery_SEARCH}>" style="color: #808080;" onFocus="HideFormGuide(this);" onBlur="ShowFormGuide(this);" class="textbox" />
+  <input type="hidden" name="action" value="results" />
+  <input type="image" src="<{$xoops_imageurl}>images/search-icon.png" name="searchSubmit" value="<{$smarty.const._gallery_SEARCH}>" id="searchBtn" class="button"/>
+  </form>
+</div>

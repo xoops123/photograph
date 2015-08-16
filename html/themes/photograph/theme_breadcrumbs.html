@@ -1,0 +1,34 @@
+<{if !$xoops_dirname == ""}>
+	<{if $xoops_dirname == "webphoto"}>
+		<ul>
+	 	<li><a href="<{$xoops_url}>/"><{$smarty.const._gallery_HOME_NAME}></a>&nbsp;&gt;&nbsp;</li>
+		  <{foreach from=$xoops_breadcrumbs item="item"}>
+			  <{if $item.url}>
+			       <li><a href="<{$item.url}>"><{$item.name}></a>&nbsp;&gt;&nbsp;</li>
+			  <{/if}>
+		  <{/foreach}>
+	 	<li>&nbsp;&gt; <{$title_bread_crumb}></li>
+		</ul>
+	<{else}>
+		<ul>
+	 	<li><a href="<{$xoops_url}>/"><{$smarty.const._gallery_HOME_NAME}></a>&nbsp;&gt;&nbsp;</li>
+		  <{foreach from=$xoops_breadcrumbs item="item"}>
+			  <{if $item.url}>
+			       <li><a href="<{$item.url}>"><{$item.name}></a>&nbsp;&gt;&nbsp;</li>
+			  <{else}>
+			       <li><{$item.name}></li>
+			  <{/if}>
+		  <{/foreach}>
+		</ul>
+	<{/if}>
+<{else}>
+	<ul>
+ 	<li>
+		<{if $xoops_isuser}>
+		&nbsp;&nbsp;<{$smarty.const._gallery_WELCOME}><span class="uname"><{$xoops_uname|escape}></span><{$smarty.const._gallery_WELCOME_2}>
+		<{else}>
+		&nbsp;&nbsp;<{$smarty.const._gallery_WELCOME}><{$xoops_sitename}>
+		<{/if}>
+	</li>
+	</ul>
+<{/if}>

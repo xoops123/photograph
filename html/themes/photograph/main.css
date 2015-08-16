@@ -1,0 +1,759 @@
+/******************************************************************************/
+/* main.css for photograph */
+/******************************************************************************/
+html {
+	height:100%;
+	font-size:62.5%;
+  overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  margin: 0;
+}
+
+/* Headline */
+h1 {
+  font-size: 1.6em;
+	margin:0 0 10px;
+}
+h2, h3 {
+  font-size: 1.4em;
+}
+h4, h5 {
+  font-size: 1.2em;
+}
+
+/* Decoration */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  margin: 10px 0;
+  clear:both;
+  margin-bottom: 10px;
+}
+
+/* Layout */
+body {
+	height:100%;
+	font-family:'ƒqƒ‰ƒMƒmŠpƒS Pro W3','Hiragino Kaku Gothic Pro','ƒƒCƒŠƒI',Meiryo,'‚l‚r ‚oƒSƒVƒbƒN',sans-serif;
+  text-align: center;
+}
+#outerwrapper {
+	position:relative;
+ 	width: 100%;   
+	height:auto!important;
+	height:100%;
+	min-height:100%;
+  margin: 0px;
+}
+body>#outerwrapper {
+	height:auto;
+}
+#Container {
+	position:relative;
+	height:100%;
+  width: 100%;
+  margin: 0px;
+  padding-bottom:95px;
+  text-align: left;
+}
+
+/* Header */
+#Header {
+	position:relative;
+	float: left;
+  width: 100%;
+	height:30px;
+}
+#Header a:link,
+#Header a:visited {	
+	text-decoration: none;
+}
+
+/* Breadcrumb */
+#breadcrumbs {
+	position:relative;
+	height:23px;
+	width:90%;
+	padding-left:18px;
+	padding-top:2px;
+	text-align:left;
+	font-size:1.2em;
+}
+
+#breadcrumbs ul {
+  width: 96%;
+  height:20px;
+	font-weight:normal;
+	line-height:20px;
+	margin-left:1.5em;
+	margin-top:2px;
+}
+#breadcrumbs ul li {
+	float:left;
+  height:20px;
+	line-height:20px;
+}
+#breadcrumbs ul li a:link , #breadcrumbs ul li a:visited{
+	float:left;
+	display:block;
+	text-decoration:none;
+}
+
+#Logo img {
+	height:105px;
+	width:500px;
+}
+#Sitename {
+	font-family: cursive;
+	position:absolute;
+	left:30px;
+	top:20px;
+	font-size: 60px;
+	font-weight: bold;
+}
+#Sitename h1 {
+	font-size: 60px;
+}
+
+#Slogan {
+	position:absolute;
+	left:60px;
+	top:85px;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+#Logo {
+	position:absolute;
+	left:20px;
+	top:15px;
+  height: 105px;
+  width: 500px;
+}
+
+#middleline {
+	position:relative;
+	float: left;
+	width:100%;
+	height:120px;
+}
+#middleline_c {
+	position:relative;
+	float: left;
+	width:100%;
+	height:110px;
+	margin:0;
+	margin-bottom:20px;
+}
+#middleline .mc_innerblock {
+	position:absolute;
+	left:120px;
+	top:8px;
+	height:110px;
+	overflow:hidden;
+}
+
+/* Contents */
+#Wrapper {
+	padding-left:200px;
+	zoom:1;/*for IE6*/
+	font-size:1.2em;
+}
+#CenterWrapper {
+	float:right;
+	width:100%;
+	margin-left:-200px;
+}
+#SideColumn {
+	float:left;
+	width:200px;
+	margin-left:-200px;
+}
+
+#CenterWrapper div.L0R0 ,#CenterWrapper div.L1R0 {
+	position: relative;
+	width:93%;
+	margin-left:10px;
+	padding: 2em;
+}
+#CenterWrapper div.L1R1 , #CenterWrapper div.L0R1  {
+	position: relative;
+	width:93%;
+	height:auto;
+	margin-left:10px;
+	padding: 2em;
+}
+#CenterWrapper div.L1R1:after , #CenterWrapper div.L0R1:after  {
+  content : "";
+  display : block;
+  height : 0;
+  clear : both;
+} 
+
+/* Top Column */
+#TopColumn {
+	position:relative;
+  float: left;
+  width: 90%;
+	margin:0 auto;
+  padding: 30px;
+	margin-bottom:30px;
+	font-size:1.2em;
+	line-height:1.5;
+}
+
+/* Center Column */
+#CenterColumn {
+	width:100%;
+	min-width:400px;
+}
+
+/* L0R1 & L1R1 */
+body.L0R1 #CenterColumn , body.L1R1 #CenterColumn{
+  float: left;
+  width: 73%;
+	min-width:500px;
+}
+body.L0R1 #RightColumn , body.L1R1 #RightColumn {
+  float: right;
+  width: 25%;
+}
+
+#SideColumn #LeftColumn {
+	padding-top:30px;
+}
+
+
+/* Content */
+#CenterColumn  h2.BlockTitle {
+  font-size: 1.2em;
+	line-height: 1.6;
+	padding-top:2px;
+	margin-bottom:10px;
+}
+#CenterColumn .BlockContent, #ModuleContents {
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 30px;
+  clear:both;
+}
+
+/* Center LR Column */
+#CenterLColumn {
+  float: left;
+  width: 49%;
+}
+#CenterRColumn {
+  float: right;
+  width: 49%;
+}
+
+.CenterCblock {
+  clear: both;
+	margin-bottom:20px;
+}
+.CenterLblock , .CenterRblock{
+  clear: both;
+}
+.LeftBlock, .RightBlock {
+	padding: 10px 0;
+}
+
+/* Left Right Column Title */
+#LeftColumn h2.BlockTitle_a, 
+#LeftColumn h2.BlockTitle_b, 
+#LeftColumn h2.BlockTitle_c, 
+#RightColumn h2.BlockTitle_a,
+#RightColumn h2.BlockTitle_b,
+#RightColumn h2.BlockTitle_c {
+  font-size: 1.2em;
+	line-height: 1.6;
+	margin-bottom: 0;
+	padding-top:2px;
+	padding-left:10px;
+}
+
+/* Left Right Column Content */
+#LeftColumn .BlockContent_a,
+#LeftColumn .BlockContent_b,
+#LeftColumn .BlockContent_c,
+#RightColumn .BlockContent_a,
+#RightColumn .BlockContent_b,
+#RightColumn .BlockContent_c {
+  font-size: 1em;
+  text-align:left;
+	line-height:1.5;
+	padding:8px;
+	padding-left:0.8em;
+}
+#LeftColumn .BlockContent_a p,
+#LeftColumn .BlockContent_b p,
+#LeftColumn .BlockContent_c p,
+#RightColumn .BlockContent_a p,
+#RightColumn .BlockContent_b p,
+#RightColumn .BlockContent_c p {
+  text-align:left;
+}
+#LeftColumn .BlockContent_a a,
+#LeftColumn .BlockContent_b a,
+#LeftColumn .BlockContent_c a,
+#RightColumn .BlockContent_a a,
+#RightColumn .BlockContent_b a,
+#RightColumn .BlockContent_c a {
+	text-decoration:underline;
+}
+#LeftColumn .BlockContent_a ul li ,
+#LeftColumn .BlockContent_b ul li ,
+#LeftColumn .BlockContent_c ul li ,
+#RightColumn .BlockContent_a ul li ,
+#RightColumn .BlockContent_b ul li ,
+#RightColumn .BlockContent_c ul li {
+	margin-bottom:5px;
+}
+
+
+#BacktoTop {
+	width:95%;
+	height:30px;
+  text-align: right;
+	padding-top:20px;
+  font-size:0.8em;
+	clear:left;
+}
+
+
+/* Footer */
+#Footer {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+  width: 100%;
+  height:80px;
+	font-size:1.2em;
+	clear:both;
+}
+
+#Footer p {
+  margin: 0 10px;
+  padding: 10px 0;
+  text-align:center;
+}
+
+/* footer menu */
+#footermenu {
+	position:relative;
+	height:12px;
+  margin: 0 auto;
+	text-align:center;
+	padding: 5px;
+	padding-top:20px;
+}
+
+#footermenu a{
+	padding:5px;
+	text-decoration:none;
+}
+#footermenu a:hover{
+	text-decoration: none;
+}
+
+#user_menu_block {
+	position:relative;
+	height:12px;
+  margin: 0 auto;
+	text-align:center;
+	padding: 5px;
+}
+#user_menu_block a{
+	padding: 5px;
+	text-decoration: none;
+}
+#user_menu_block a:hover{
+	text-decoration: none;
+}
+
+#Banner {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+	padding: 20px 0;
+}
+
+#XoopsBanner {
+	position:absolute;
+	top:30px;
+	left:50%;
+	margin-left:-234px;
+}
+
+/* for accessibility */
+.Skip {	
+  position: absolute;
+  left: -999em;
+}
+
+/******************************************************************************/
+
+/* clearfix */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/******************************************************************************/
+
+/* XOOPS Main Menu */
+#mainmenu, #usermenu {
+  margin:0;
+  padding:0;
+  text-align:left;
+}
+#mainmenu li, #usermenu li {
+  display: inline;
+}
+#mainmenu a {
+  display: block;
+	margin:0 1px;
+	text-decoration: none;
+}
+#mainmenu a:hover {
+	text-decoration: none;
+}
+#mainmenu a.menuTop {
+  padding: 5px 10px;
+}
+#mainmenu a.menuMain {
+  padding: 5px 10px;
+}
+#mainmenu a.menuSub {
+  padding: 5px 5px 5px 15px;
+}
+
+#usermenu a {
+  display: block;
+	text-decoration: none;
+	margin:0 1px;
+  padding: 5px 10px;
+}
+#usermenu a:hover {
+	text-decoration: none;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+}
+
+/* XOOPS table */
+table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+* html td {
+  font-size: 1em;
+} /* IE6 */
+
+.outer {}
+.head {
+  padding: 5px;
+  font-weight: bold;
+}
+.even {
+  padding: 5px;
+}
+.odd {
+  padding: 5px;
+}
+.foot {
+  padding: 5px;
+}
+
+tr.even td {
+  padding: 5px;
+}
+tr.odd td {
+  padding: 5px;
+}
+
+/******************************************************************************/
+
+/* XOOPS item */
+.item {}
+.itemHead {
+  padding: 3px;
+}
+.itemInfo {
+  text-align: right;
+  padding: 3px;
+}
+.itemTitle a {
+  font-weight: bold;
+  font-variant: small-caps;
+}
+.itemPoster {
+  font-size: 0.8em;
+}
+.itemPostDate {
+  font-size: 0.8em;
+}
+.itemStats {
+  font-size: 0.8em;
+}
+.itemBody {
+  padding-left: 0px;
+}
+.itemText {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 100%;
+}
+.itemText:first-letter {}
+.itemFoot {
+  text-align: right;
+  padding: 3px;
+}
+.itemAdminLink {
+  font-size: 0.8em;
+}
+.itemPermaLink {
+  font-size: 0.8em;
+}
+
+/* XOOPS Error Msg */
+.errorMsg {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.confirmMsg {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.resultMsg {
+  text-align: center;
+  padding: 10px;
+}
+
+/* XOOPS Code & Quote */
+.xoopsCode {
+  font-family: "Courier New",Courier,monospace;
+  padding: 0px 6px 6px 6px;
+}
+.xoopsQuote {
+  padding: 3px;
+}
+
+/* XOOPS com */
+.comTitle {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.comText {
+  padding: 2px;
+}
+.comUserStat {
+  font-size: 1em;
+  font-weight:bold;
+  margin: 2px;
+  padding: 2px;
+}
+.comUserStatCaption {
+  font-weight: normal;
+}
+.comUserStatus {
+  margin-left: 2px;
+  margin-top: 10px;
+  font-weight:bold;
+  font-size: 1em;
+}
+.comUserRank {
+  margin: 2px;
+}
+.comUserRankText {
+  font-size: 1em;
+  font-weight:bold;
+}
+.comUserRankImg {
+  border: 0;
+}
+.comUserName {}
+.comUserImg {
+  margin: 2px;
+}
+.comDate {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.comDateCaption {
+  font-weight: bold;
+  font-style: normal;
+}
+
+#main_img {
+	z-index:5;
+	display: none;
+	height:32px;
+}
+
+#user_info {
+	position:absolute;
+	top:0px;
+	right:10px;
+	font-size:0.8em;
+}
+
+span.uname {
+	font-size:1.6em;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+#redirect_message {
+	position:absolute;
+	top:10px;
+	right:200px;
+	width:200px;
+	min-height:40px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#stylechange {
+	position:absolute;
+	top:2px;
+	right:20px;
+	height:20px;
+	weight:80px;
+}
+
+#socialbutton {
+	position:absolute;
+	top:0px;
+	right:200px;
+	width:270px;
+	height:20px;
+	padding:5px;
+	text-align:right;
+	z-index:110;
+}
+#socialbutton div {
+	float:left;
+	margin-right:10px;
+}
+#socialbutton2 {
+	position:absolute;
+	top:30px;
+	right:200px;
+	width:480px;
+	height:20px;
+	padding:5px;
+	z-index:110;
+}
+#socialbutton2 div {
+	float:left;
+	margin-right:10px;
+}
+
+#search {
+	position:absolute;
+	height:30px;
+	width:202px;
+	top:5px;
+	right:20px;
+}
+#searchform {
+	width: 200px;
+	background: transparent; 
+	display: block;
+	height: 30px;
+	position: relative;
+}
+#keywords	{
+	width: 156px;
+	position: absolute;
+	height: 20px;
+	top: 3px;
+	left: 12px;
+	border:1px solid #808080;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-o-border-radius: 15px;
+	-ms-border-radius: 15px;	
+	background:#a9a9a9;
+}
+#searchBtn	{
+	position: absolute;
+	top: 3px;
+	left: 182px;
+}
+
+/* for Header Img Carousel */
+.image_carousel {
+	width: 98%;
+	margin:0;
+	padding:0;
+	height: 105px;
+}
+.image_carousel img {
+	display: block;
+	float: left;
+}
+#foo1 {
+	width:100%;
+	height: 105px;
+	margin: 0;
+	margin-left: 55px;
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+#foo1 li {
+	float:left;
+	width: 140px;
+	height: 105px;
+	padding: 0;
+	margin-right:7px;
+	display: block;
+	overflow: hidden;
+}
+#foo1 li img {
+	width:100%;
+}
+.clearfix_c {
+	float: none;
+	clear: both;
+}
+

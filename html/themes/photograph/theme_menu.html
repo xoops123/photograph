@@ -1,0 +1,14 @@
+<div id="menu_m">
+<ul>
+	<{if $menu0.dirname == $xoops_dirname}>
+		<li><a href="<{$xoops_url}>/" class="act"><{$smarty.const._gallery_HOME_NAME}></a></li>
+	<{else}>
+		<li><a href="<{$xoops_url}>/" class="menu_c<{cycle values="1,2,3,4,5,6,7"}>"><{$smarty.const._gallery_HOME_NAME}></a></li>
+	<{/if}>
+		<{foreach from=$xugj_menus item="menu0"}>
+		<li>
+			<a href="<{$xoops_url}>/modules/<{$menu0.dirname}>/<{$menu0.url}>" <{if $menu0.dirname == $xoops_dirname}> class="act"<{else}> class="menu_c<{cycle values="1,2,3,4,5,6,7"}>"<{/if}>><{$menu0.name}></a>
+		</li>
+		<{/foreach}>
+</ul>
+</div>

@@ -1,0 +1,10 @@
+<{if $xoops_showlblock}>
+<div id="LeftColumn">
+	<{foreach item=block from=$xoops_lblocks name=lbloop}>
+  	<div class="LeftBlock" id="lblock<{$smarty.foreach.lbloop.iteration}>">
+   		<{if ! $block.title|strstr:"none"}><h2 class="BlockTitle_<{cycle values="a,b,c"}>"><{$block.title}></h2><{/if}>
+   		<div class="BlockContent_<{cycle values="a,b,c"}>"><{$block.content}></div>
+  	</div>
+  	<{/foreach}>
+</div>
+<{/if}>

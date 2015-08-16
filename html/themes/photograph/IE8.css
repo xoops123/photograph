@@ -1,0 +1,14 @@
+/* webphoto */
+.webphoto_photo_div .webphoto_table_sub {
+	color:blue;
+  position: relative;
+	top: -23px;
+  left: 40px;
+}
+.webphoto_photo_div .webphoto_table_sub a:link ,.webphoto_photo_div .webphoto_table_sub a:visited {
+	color:navy;
+	background:transparent;
+  z-index: 2;
+}
+
+

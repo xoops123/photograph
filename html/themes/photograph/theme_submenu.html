@@ -1,0 +1,13 @@
+<div id="menu_s">
+	<{if $xugj_menus1}> |&nbsp;
+		<{foreach from=$xugj_menus1 item="menu1"}>
+			<{if stristr( $smarty.server.REQUEST_URI , $menu1.url )}>
+				<{assign var="xugj_menus2" value=$menu1.sub}>
+				<{assign var="menu1_class" value=" selected"}>
+			<{else}>
+				<{assign var="menu1_class" value=""}>
+			<{/if}>
+			<a href="<{$xoops_url}>/modules/<{$menu1.dirname}>/<{$menu1.url}>" class="menu_level1<{$menu1_class}>"><{$menu1.name}></a>&nbsp;|&nbsp;
+		<{/foreach}>
+	<{/if}>
+</div>

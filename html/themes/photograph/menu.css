@@ -1,0 +1,67 @@
+/******************************************************************************/
+/* css for header-menu */
+/******************************************************************************/
+
+
+/* Header Menu */
+#menu_m {
+	position:relative;
+  width:100%;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+#menu_m a:link,
+#menu_m a:visited {	
+	text-decoration: none;
+}
+#menu_m ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#menu_m ul li {
+	height: 30px;
+	line-height:30px;
+	margin: 0;
+	padding: 0;
+	margin-right:3px;
+	margin-bottom: 10px;
+}
+#menu_m ul li a {
+	font-size:16px;
+	font-weight:bold;
+	text-decoration: none;
+	padding: 3px 20px 0 20px;
+	outline: none;
+}
+* html #menu_m ul li ,* html #menu_m ul li a , * html #menu_m ul li a:hover{
+	witespase:nowrap;
+}
+
+* html #menu_m ul li div.act , * html #menu_m ul li div.act a:link , * html #menu_m ul li div.act a:visited {
+	witespase:nowrap;
+}
+
+
+#menu_s {
+	position:relative;
+	width:95%;
+	margin:0 auto;
+	padding:0;
+	padding-top:6px;
+	text-align:center;
+	color:#000;
+}
+#menu_ss {
+	text-align:center;
+	margin: 20 auto;
+	font-size:12px;
+}
+
+#menu_s a:link,
+#menu_s a:visited {	
+}
+#menu_s a:hover {	
+}
+
+
